@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo App | Fatahi Showunmi</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="">
+    <div id="app">
+      <header>
+        <h1>Todo App</h1>
+        <button id="add-task" class="add-task">Add Task</button>
+      </header>
+      <main>
+        <ul id="task-list"></ul>
+      </main>
+
+      <div id="task-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Add/Edit Task</h2>
+          <form id="task-form">
+            <label for="task-name">Task Name:</label>
+            <input type="text" id="task-name" required />
+
+            <label for="task-due-date">Due Date:</label>
+            <input type="date" id="task-due-date" />
+
+            <label for="task-priority">Priority:</label>
+            <select id="task-priority">
+              <option value="low">Low</option>
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
+            </select>
+
+            <button type="submit">Save Task</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

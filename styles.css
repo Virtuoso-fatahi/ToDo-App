@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  background: url("assets/img/ToDo\ App.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+#app {
+  max-width: 600px;
+  margin: 35px auto 0;
+  padding: 1em;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1em;
+}
+
+header h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+}
+
+.add-task {
+  background-color: rgb(207, 2, 2);
+}
+
+.add-task:hover {
+          background-color: rgb(170, 2, 2);
+}
+
+#task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.task-details {
+  flex-grow: 1;
+}
+
+.task-actions {
+  display: flex;
+  gap: 0.5em;
+}
+
+button {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+  font-size: 1.5em;
+}
